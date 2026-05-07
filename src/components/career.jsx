@@ -1,4 +1,5 @@
 import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 export default function Career() {
   const courses = [
@@ -39,14 +40,18 @@ export default function Career() {
             <div className="bg-white py-[50px] px-[40px]">
               <h3 className="text-[20px] font-semibold">{course}</h3>
               <p className="text-gray-400 font-[300] mt-[10px]">
-                Bengaluru · Full Time{" "}
+                Bengaluru · Full Time
               </p>
               <p className="text-gray-400 font-[300] mb-[40px]">
-                $10K - $18K · No equity{" "}
+                $10K - $18K · No equity
               </p>
-              <button className="flex gap-3 items-center text-blue-600 cursor-pointer hover:text-blue-950">
+              <Link
+                to="/careerInner"
+                state={{ title: course }}
+                className="flex gap-3 items-center text-blue-600 cursor-pointer hover:text-blue-950"
+              >
                 Apply Now <HiArrowLongRight />
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -57,40 +62,66 @@ export default function Career() {
             Come and join a team of highly skilled professionals.
           </h1>
           <p>
-            Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. 
+            Through True Rich Attended does no end it his mother since real had
+            half every him case in packages enquire we up ecstatic unsatiable
+            saw his giving Remain expense you position concluded.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-[10px]">
-            <div className="py-[20px] px-[20px] border border-gray-200 ">
-                <img src="/icons/career-1.png" alt="" />
-                <h2 className="text-xl font-semibold my-[20px]">Covid-19 insurance</h2>
-                <p>Through True Rich Attended does no end it his mother since real had halfdoes no end it</p>
-            </div>
-            <div className="py-[20px] px-[20px] border border-gray-200 ">
-                <img src="/icons/career-2.png" alt="" />
-                <h2 className="text-xl font-semibold my-[20px]">Flexible working time</h2>
-                <p>Through True Rich Attended does no end it his mother since real had halfdoes no end it</p>
-            </div>
-            <div className="py-[20px] px-[20px] border border-gray-200 ">
-                <img src="/icons/career-3.png" alt="" />
-                <h2 className="text-xl font-semibold my-[20px]">Work from home</h2>
-                <p>Through True Rich Attended does no end it his mother since real had halfdoes no end it</p>
-            </div>
-            <div className="py-[20px] px-[20px] border border-gray-200 ">
-                <img src="/icons/career-4.png" alt="" />
-                <h2 className="text-xl font-semibold my-[20px]">Annual retreats</h2>
-                <p>Through True Rich Attended does no end it his mother since real had halfdoes no end it</p>
-            </div>
-            <div className="py-[20px] px-[20px] border border-gray-200 ">
-                <img src="/icons/career-5.png" alt="" />
-                <h2 className="text-xl font-semibold my-[20px]">Learning stipend</h2>
-                <p>Through True Rich Attended does no end it his mother since real had halfdoes no end it</p>
-            </div>
-            <div className="py-[20px] px-[20px] border border-gray-200 ">
-                <img src="/icons/career-6.png" alt="" />
-                <h2 className="text-xl font-semibold my-[20px]">Gym membership</h2>
-                <p>Through True Rich Attended does no end it his mother since real had halfdoes no end it</p>
-            </div>
+          <div className="py-[20px] px-[20px] border border-gray-200 ">
+            <img src="/icons/career-1.png" alt="" />
+            <h2 className="text-xl font-semibold my-[20px]">
+              Covid-19 insurance
+            </h2>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had halfdoes no end it
+            </p>
+          </div>
+          <div className="py-[20px] px-[20px] border border-gray-200 ">
+            <img src="/icons/career-2.png" alt="" />
+            <h2 className="text-xl font-semibold my-[20px]">
+              Flexible working time
+            </h2>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had halfdoes no end it
+            </p>
+          </div>
+          <div className="py-[20px] px-[20px] border border-gray-200 ">
+            <img src="/icons/career-3.png" alt="" />
+            <h2 className="text-xl font-semibold my-[20px]">Work from home</h2>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had halfdoes no end it
+            </p>
+          </div>
+          <div className="py-[20px] px-[20px] border border-gray-200 ">
+            <img src="/icons/career-4.png" alt="" />
+            <h2 className="text-xl font-semibold my-[20px]">Annual retreats</h2>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had halfdoes no end it
+            </p>
+          </div>
+          <div className="py-[20px] px-[20px] border border-gray-200 ">
+            <img src="/icons/career-5.png" alt="" />
+            <h2 className="text-xl font-semibold my-[20px]">
+              Learning stipend
+            </h2>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had halfdoes no end it
+            </p>
+          </div>
+          <div className="py-[20px] px-[20px] border border-gray-200 ">
+            <img src="/icons/career-6.png" alt="" />
+            <h2 className="text-xl font-semibold my-[20px]">Gym membership</h2>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had halfdoes no end it
+            </p>
+          </div>
         </div>
       </section>
     </>

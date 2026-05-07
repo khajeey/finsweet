@@ -23,10 +23,18 @@ export default function Footer() {
 
           <div className="grid grid-cols-3 gap-10 mt-[40px]">
             <ul className="text-[20px] font-semibold flex flex-col gap-4">
-              <Link className="hover:text-gray-500" to="/">Home</Link>
-              <Link className="hover:text-gray-500" to="/company">Company</Link>
-              <Link className="hover:text-gray-500" to="/career">Career</Link>
-              <Link className="hover:text-gray-500" to="/news">News</Link>
+              <Link className="hover:text-gray-500" to="/">
+                Home
+              </Link>
+              <Link className="hover:text-gray-500" to="/company">
+                Company
+              </Link>
+              <Link className="hover:text-gray-500" to="/career">
+                Career
+              </Link>
+              <Link className="hover:text-gray-500" to="/news">
+                News
+              </Link>
             </ul>
             <ul className="flex flex-col gap-3">
               <p className="mb-[10px] font-semibold text-[20px]">Service</p>
@@ -41,13 +49,15 @@ export default function Footer() {
               <p className="mb-[10px] font-semibold text-[20px]">Resourses</p>
               <li>About Us</li>
               <li>Testimonial</li>
-              <li>Privacy Policy</li>
+              <Link to="/privacy">
+                <li>Privacy Policy</li>
+              </Link>
               <li>Terms of use</li>
               <li>Blog</li>
             </ul>
 
             <div className="col-start-3">
-              <button className="flex gap-3 items-center">
+              <button className="flex gap-3 items-center cursor-pointer hover:text-gray-500">
                 Contact Us <HiArrowLongRight />
               </button>
             </div>
@@ -61,10 +71,10 @@ export default function Footer() {
               <p>©2021 Finsweet</p>
             </div>
             <div className="flex gap-5">
-              <FaFacebook />
-              <FaTwitter />
-              <FaInstagram />
-              <FaLinkedin />
+              <FaFacebook className="cursor-pointer hover:scale-150" />
+              <FaTwitter className="cursor-pointer hover:scale-150" />
+              <FaInstagram className="cursor-pointer hover:scale-150" />
+              <FaLinkedin className="cursor-pointer hover:scale-150" />
             </div>
           </div>
         </div>

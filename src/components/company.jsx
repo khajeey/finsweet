@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 export default function Company() {
   const team = [
-  { number: 6, name: "Javena Melo", position: "Support Assistant" },
-  { number: 7, name: "Caleb Norton", position: "Project Manager" },
-  { number: 8, name: "Ariana Blake", position: "CEO" },
-  { number: 9, name: "Derek Coleman", position: "UI Designer" },
-  { number: 10, name: "Sophia Turner", position: "HR Manager" },
-  { number: 11, name: "Marcus Reed", position: "Support Assistant" },
-  { number: 12, name: "Lena Brooks", position: "Project Manager" },
-  { number: 13, name: "Lena Kim", position: "Developer" },
-];
+    { number: 6, name: "Javena Melo", position: "Support Assistant" },
+    { number: 7, name: "Caleb Norton", position: "Project Manager" },
+    { number: 8, name: "Ariana Blake", position: "CEO" },
+    { number: 9, name: "Derek Coleman", position: "UI Designer" },
+    { number: 10, name: "Sophia Turner", position: "HR Manager" },
+    { number: 11, name: "Marcus Reed", position: "Support Assistant" },
+    { number: 12, name: "Lena Brooks", position: "Project Manager" },
+    { number: 13, name: "Lena Kim", position: "Developer" },
+  ];
   return (
     <>
       <main>
@@ -170,19 +170,19 @@ export default function Company() {
               unsatiable.
             </p>
           </div>
-          
-            <div className="grid grid-cols-4 ">
-              {team.map((item) => (
-                <div key={item.number} className="relative group overflow-hidden">
-                    <Link
-                        to="/team"
-                        state={{ img: `/imgs/comp-${item.number}.png`, name: item.name, position: item.position }}
-                        >
-                        <img
-                            src={`/imgs/comp-${item.number}.png`}
-                            alt=""
-                        />
-                    
+
+          <div className="grid grid-cols-4 ">
+            {team.map((item) => (
+              <div key={item.number} className="relative group overflow-hidden">
+                <Link
+                  to="/team"
+                  state={{
+                    img: `/imgs/comp-${item.number}.png`,
+                    name: item.name,
+                    position: item.position,
+                  }}
+                >
+                  <img src={`/imgs/comp-${item.number}.png`} alt="" />
 
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center px-6 cursor-pointer">
                     <h2 className="text-white text-2xl font-bold">
@@ -197,10 +197,9 @@ export default function Company() {
                     </div>
                   </div>
                 </Link>
-                </div>
-              ))}
-            </div>
-          
+              </div>
+            ))}
+          </div>
         </section>
         <section className="max-w-[1250px] m-auto bg-blue-600 relative">
           <img className="" src="/icons/shape.svg" alt="" />
